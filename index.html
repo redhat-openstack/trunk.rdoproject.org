@@ -67,13 +67,13 @@
                   <h3>Lastest Build Reports</h3>
                   <ul>
                     <li>
-                      <a href="https://trunk.rdoproject.org/f24/report.html">Fedora 24 master</a>
-                    </li>
-                    <li>
                       <a href="https://trunk.rdoproject.org/f25/report.html">Fedora rawhide master</a>
                     </li>
                     <li>
-                      <a href="https://trunk.rdoproject.org/centos7-master/report.html">CentOS 7 master</a>
+                      <a href="https://trunk.rdoproject.org/centos7-master/report.html">CentOS 7 master (using current tagged releases)</a> <a href="#footnote1">[*]</a>
+                    </li>
+                    <li>
+                      <a href="https://trunk.rdoproject.org/centos7-master-head/report.html">CentOS 7 master</a>
                     </li>
                     <li>
                       <a href="https://trunk.rdoproject.org/centos7-newton/report.html">CentOS 7 stable/newton</a>
@@ -81,15 +81,9 @@
                     <li>
                       <a href="https://trunk.rdoproject.org/centos7-mitaka/report.html">CentOS 7 stable/mitaka</a>
                     </li>
-                    <li>
-                      <a href="https://trunk.rdoproject.org/centos7-liberty/report.html">CentOS 7 stable/liberty</a>
-                    </li>
                   </ul>
                   <h3>Latest (untested!) trunk repos</h3>
                   <ul>
-                    <li>
-                      <a href="https://trunk.rdoproject.org/f24/current/">Fedora 24 master</a>, <a href="https://trunk.rdoproject.org/f24/current/delorean.repo">repo</a>
-                    </li>
                     <li>
                       <a href="https://trunk.rdoproject.org/f25/current/">Fedora rawhide master</a>, <a href="https://trunk.rdoproject.org/f25/current/delorean.repo">repo</a>
                     </li>
@@ -104,9 +98,6 @@
                     </li>
                     <li>
                       <a href="https://trunk.rdoproject.org/centos7-mitaka/current/">CentOS 7 stable/mitaka</a>, <a href="https://trunk.rdoproject.org/centos7-mitaka/current/delorean.repo">repo</a>
-                    </li>
-                    <li>
-                      <a href="https://trunk.rdoproject.org/centos7-liberty/current/">CentOS 7 stable/liberty</a>, <a href="https://trunk.rdoproject.org/centos7-liberty/current/delorean.repo">repo</a>
                     </li>
                   </ul>
                   <h3>RDO Trunk infrastructure administrators</h3>
@@ -161,6 +152,8 @@
                       </tr>
                     </tbody>
                   </table>
+                  <br><a name="footnote1"> [*] The ocata-uc tag in <a href="https://github.com/redhat-openstack/rdoinfo/blob/master/rdo.yml">rdoinfo</a> defines the exact tags being packaged for each project. Not every package is built from a tagged release, only those present in the <a href="http://git.openstack.org/cgit/openstack/requirements/plain/upper-constraints.txt">upper-constraints</a> file, used by the upstream OpenStack CI. The rest of the packages are built from the master branch.
+                  </a>
                   <!-- CONTENT ENDS -->
 
                 </div>
